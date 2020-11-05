@@ -1,0 +1,392 @@
+/*
+Theme Name: Fluid Blue
+Theme URI: http://srinig.com/wordpress-themes/fluid-blue/
+Description: A simple two column fluid width theme. Right sidebar supports widgets. Standards compliant.
+Version: 1.0.1
+Author: Srini G
+Author URI: http://srinig.com/
+
+	The CSS, XHTML and design is released under GPL:
+	http://www.opensource.org/licenses/gpl-license.php
+
+*/
+
+body {
+	background-color:white;
+    background-image:url(../../../../images/b-2a.gif);
+	background-repeat:repeat-y;
+	font-family:verdana, geneva, arial, helvetica, sans-serif;
+    color:black;
+	margin:27px; 0px 0px 0px;
+	padding:0px;
+	}
+h1 {
+	margin:15px 0px 10px 0px;
+	padding:0px;
+	font-size:130%;
+	font-weight:normal;
+	line-height:130%;
+	color:#000;
+	background-color:white;
+	}
+h2 {
+	margin:15px 0px 10px 0px;
+	padding:0px;
+	font-size:115%;
+	font-style:italic;
+	font-weight:normal;
+	line-height:115%;
+	color:#000;
+	background-color:white;
+	}
+h3 {
+	margin:15px 0px 10px 0px;
+	padding:0px;
+	font-size:110%;
+	font-weight:normal;
+	line-height:110%;
+	color:#000;
+	background-color:white;
+	}
+h4 {
+	margin:15px 0px 10px 0px;
+	padding:0px;
+	font-size:100%;
+	font-weight:normal;
+	line-height:120%;
+	color:#000;
+	background-color:white;
+	}
+h5 {
+	margin:15px 0px 10px 0px;
+	padding:0px;
+	font-size:95%;
+	font-weight:normal;
+	line-height:110%;
+	color:#000;
+	background-color:white;
+	}
+h6 {
+	margin:15px 0px 10px 0px;
+	padding:0px;
+	font-size:80%;
+	font-weight:normal;
+	line-height:110%;
+	color:#000;
+	background-color:white;
+	}
+p {
+	font-size:95%;
+	line-height:130%;
+    text-indent:.3in;
+	margin:5px 0px 5px 0px;
+	padding:0px;
+	}
+
+a {
+	color:#0000FF;
+	text-decoration:none;
+	background-color:#FFFFFF;
+	}
+a:link {
+    color:#0000FF;
+    background-color:#FFFFFF;
+	}
+a:visited {
+    color:#7F3F7F;
+    background-color:#FFFFFF;
+	}
+a:hover {color:#0000FF;
+     background-color:#FFFF99;
+}
+
+img {
+	border:0;
+	margin:5px;
+}
+
+img.wp-smiley {
+	margin:0;
+}
+
+input, textarea {
+	border:1px solid #aaa;
+	font-size:1.2em;
+}
+
+
+/* Layout */
+#page {
+	min-width:760px;
+	margin:0 auto;
+	text-align:left;
+}
+
+#wrapper {
+	margin:0 5%;
+	padding-right:230px;
+}
+
+#content{
+	float:left;
+	width:96%;
+	margin-right:-230px;
+	border-right:230px solid #fff;
+	padding:5px 4% 5px 0;
+}
+
+#sidebar{
+	float:left;
+	width:190px;
+	margin:0 -230px 0 0;
+	padding:0px;
+	background:#fff;
+        text-align:right;
+}
+
+#footer {
+	clear:both;
+	padding:5px;
+}
+
+/* Header */
+.navtop {
+    position:absolute;
+	top:10px;
+	right:5px;
+	width:750px;
+	text-align:right;
+	font-size:75%;
+	line-height:150%;
+	}
+
+.navigation {
+      font-size: 80%;
+}
+
+
+#header {
+	margin:0;
+	padding:2em 0;
+	background:#FFFFFF;
+}
+
+#headertitle {
+	margin:0 5%;
+}
+
+.search {
+	float:right;
+	position:relative;
+	bottom:3em;
+	right:5%;
+}
+.search form {
+	margin:0;
+	padding:0;
+}
+.search input {
+	display:inline;
+	width:218px;
+	border:1px solid #eee;
+	margin:0;
+	padding:0.2em 5px;
+	background:#237ab2;
+	color:#eee;
+	font-size:1em;
+}
+
+
+/* Top navigation */
+
+#hmenu {
+	border-top:0.1em solid #555;
+	border-bottom:0.1em solid #555;
+	background:#165279;
+}
+
+#hmenu ul {
+	margin:0 5%;
+	padding:0.5em 0;
+	background:#165279;
+	list-style-type:none;
+	list-style-position:outside;
+	text-indent:0;
+}
+
+#hmenu ul li {
+	display:inline;
+	margin:0;
+	padding:0;
+	text-transform:uppercase;
+}
+
+#hmenu ul li:before {
+	content: "| \0020";
+	background:transparent;
+	color:#eee;
+}
+#hmenu ul li.hmenu1:before {
+	content: "";
+}
+#hmenu ul li a {
+	padding:0.5em;
+	margin:0;
+	background:transparent;
+	color:#c6c8c9;
+	text-decoration:none;
+}
+
+#hmenu ul li.hmenu1 a {
+	padding-left:0;
+}
+
+#hmenu ul li a:hover {
+	background:transparent;
+	color:#fff;
+}
+
+/* Sidebar */
+
+
+#sidebar ul {
+	padding:0;
+	margin:0;
+	list-style: none;
+}
+#sidebar ul li {
+	margin:0 0 2em 0;
+}
+
+#sidebar ul ul {
+	margin:0;
+	padding:0;
+}
+
+#sidebar li li {
+	margin:0.1em 0;
+}
+
+#sidebar li li li {
+	padding-left:10px;
+}
+
+#sidebar ul h2 {
+	margin:0;
+	padding:0;
+	color:#8c8c8c;
+	font-size:1.2em;
+}
+
+
+/* Footer */
+#footer { 
+	text-align:right;
+	font-size:75%;
+	background:#ffffff;
+	color:#000000;
+}
+
+
+}
+
+/* Post */
+.post {
+	margin:0 0 0 0;
+        border-bottom: 1px dotted #8c8c8c;
+	clear:both;
+}
+
+.post p, .post ol li, .post ul li{
+	margin-top:0;
+	text-align:justify;
+}
+.post li li {
+	font-size:1100%;
+}
+.post blockquote {
+	padding:0 0 0 2em;
+        text-indent:0px;
+	border-left:1px solid #8c8c8c;
+	font-size:85%;
+}
+.post blockquote blockquote {
+        text-indent:0px;
+	margin-left:0;
+	font-size:80%;
+}
+
+.postmetadata {
+	margin:1em 0;
+	font-size:85%;
+	color:#8c8c8c;
+	text-align:right;
+}
+
+
+/* Comments */
+
+#comments {
+	margin:0 2em;
+}
+
+.commentlist {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+.commentlist li {
+	padding:2em 0;
+	overflow:auto;
+	border-bottom:0.1em solid #eee;
+}
+
+.commentlist p {
+	margin:0.5em 0;
+}
+
+.commentlist h4 {
+	margin:0;
+}
+
+textarea#comment {
+	width:100%;
+}
+/* Comment ends */
+
+
+/* Calendar */
+#wp-calendar caption {
+	text-transform:uppercase;
+	font-weight:bold;
+	color:#27a;
+	text-align:center;
+}
+#wp-calendar thead th {
+	font-weight:normal;
+	color:#27a;
+	text-align:center;
+}
+#wp-calendar tbody td {
+	text-align:center;
+}
+#wp-calendar tbody td a {
+	font-weight:bold;
+}
+#wp-calendar tbody td.pad {
+	border:none;
+}
+/* Calendar ends */
+
+abbr {
+	cursor:help;
+	border-bottom: 0.1em dotted;
+}
+
+.alignleft {
+	float:left;
+}
+.alignright {
+	float:right;
+}
